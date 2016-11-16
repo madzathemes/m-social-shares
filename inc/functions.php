@@ -1,7 +1,7 @@
 <?php function m_social_share_post() { ?>
 
   <div class="mss-post">
-    <div class="mss-general">
+    <div class="mss-general __admingleButton __ab10025" data-admingleButtonLabel="TOP">
       <span class="mss-general-like"></span>
       <span>Click and gain</span>
       <span class="mss-general-earn" style="background-image:url('<?php echo plugin_dir_url( __FILE__ ); ?>be_earn.png')"></span>
