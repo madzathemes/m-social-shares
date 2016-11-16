@@ -1,0 +1,226 @@
+@font-face {
+  font-family: "mss";
+  src:url("fonts/mss.eot");
+  src:url("fonts/mss.eot?#iefix") format("embedded-opentype"),
+    url("fonts/mss.woff") format("woff"),
+    url("fonts/mss.ttf") format("truetype"),
+    url("fonts/mss.svg#mss") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+.clear { clear: both; }
+.mss-post {
+  margin-bottom: 20px;
+}
+.mss-general {
+  background: #f2592e;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+}
+.mss-general span {
+  height: 45px;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 8px 0px;
+}
+.mss-general-logo {
+  width: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.mss-general-earn {
+  width: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.mss-general-like:before {
+  content: "\e909";
+  font-family: "mss";
+  font-size: 24px;
+  top: -7px;
+  right: 3px;
+  position: relative;
+}
+.mss-buttons {
+  margin: 5px -2.5px 0;
+}
+.mss-buttons > div {
+  width: 33.33%;
+  float: left;
+  padding: 0 2.5px;
+}
+.mss-buttons > div > a {
+  width: 100%;
+  display: block;
+  text-align: center;
+  height: 45px;
+  cursor: pointer;
+}
+.mss-buttons > div > a > span {
+  display: inline-block;
+  color: white;
+  font-size: 14px;
+  padding: 8px 0 8px;
+  font-family:Arial;
+  position: relative;
+}
+.mss-buttons > div > a > span:before {
+  font-family: "mss";
+  padding-right: 5px;
+  font-size: 18px;
+  font-weight: 400;
+}
+.mss-email a {
+  background: #5a5a5a;
+}
+.mss-email a span:before {
+  content: "\e908";
+}
+.mss-facebook a {
+  background: #3b5998;
+}
+.mss-facebook a span:before {
+  content: "\e902";
+  left: 2px !important;
+}
+.mss-twitter a {
+  background: #1dcaff;
+}
+.mss-twitter a span:before {
+  content: "\e903";
+}
+.mss-whatsapp a {
+  background: #25d366;
+}
+.mss-whatsapp a span:before {
+  content: "\e900";
+}
+.mss-more a {
+  background: #f0f0f0;
+}
+.mss-more a span:before {
+  content: "\e907";
+  color: #666;
+  font-size: 21px;
+}
+.mss-sms a {
+  background: #ff9800;
+}
+.mss-sms a span {
+  padding: 10px 0 8px 0 !important;
+}
+.mss-earn a  {
+  background: #f35822;
+}
+.mss-earn a span {
+  font-size: 17px!important;
+  padding-left: 45px !important;
+  display: inline-block;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+.mss-more a span:before {
+  content: "\e907";
+  color: #666;
+  font-size: 21px;
+}
+
+.mss-mobile {
+  display: none;
+  position: fixed;
+  width: 270px;
+  height: 260px;
+  background: white;
+  z-index: 99999;
+  padding: 40px;
+  top: 50%;
+  left: 50%;
+  margin-left: -140px;
+  margin-top: -140px;
+  -webkit-box-shadow: 0px 0px 3px -1px rgba(0,0,0,0.74);
+  -moz-box-shadow: 0px 0px 3px -1px rgba(0,0,0,0.74);
+  box-shadow: 0px 0px 3px -1px rgba(0,0,0,0.74);
+}
+.active.mss-mobile {
+  display: block;
+  -webkit-animation: fadeIn 0.3s;
+  animation: fadeIn 0.3s;
+}
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+.mss-mobile .mss-buttons > div {
+  width: 100%;
+  float: none;
+}
+.mss-mobile .mss-title {
+  padding-bottom:5px;
+  padding-left: 24px;
+  position: relative;
+}
+.mss-mobile .mss-title:before {
+  content: "\e905";
+  font-family: "mss";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.mss-mobile .mss-close {
+  content: "\e906";
+  font-family: "mss";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 21px;
+  height: 21px;
+  cursor: pointer
+}
+.mss-mobile .mss-close:before {
+  content: "\e906";
+  font-family: "mss";
+  font-size: 21px;
+}
+.mss-mobile .mss-buttons > div {
+  margin-bottom: 5px;
+}
+
+.mss-mobile-sticky {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  z-index: 99999
+}
+.mss-mobile-sticky .mss-buttons > div:first-child {
+  width: 55%
+}
+.mss-mobile-sticky .mss-buttons > div  {
+  width: 15%;
+  padding: 0px;
+}
+
+@media all and (max-width: 768px) {
+  .mss-post {
+    display: none;
+  }
+  .mss-mobile-sticky {
+    display: block;
+  }
+  body {
+    padding-bottom: 45px;
+  }
+}
+@media all and (min-width: 768px) {
+  .mss-post {
+    display: block;
+  }
+  .mss-mobile-sticky {
+    display: none;
+  }
+}
