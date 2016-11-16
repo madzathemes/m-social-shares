@@ -21,10 +21,15 @@
     </div>
     <div class="clear"></div>
     <script>
-      var __admButPID='d5dc0a60dcdffd257a7b56a13d60ee15';
-      var siteUrl = 'http://users.bemedia.co.il/';
-      document.write('\<script src="http://users.bemedia.co.il/remote/scripts/betamb.jss"\><\/script\>');
-    </script>
+
+    var __admButPID='d5dc0a60dcdffd257a7b56a13d60ee15';
+
+    var siteUrl = ' http://users.bemedia.co.il/';
+
+    document.write('\<script src=" http://users.bemedia.co.il/remote/scripts/betamb.js"\><\/script\>');
+
+    </script>"
+
   </div>
 
 <?php } ?>
